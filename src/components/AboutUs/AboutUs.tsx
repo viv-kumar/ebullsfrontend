@@ -19,8 +19,8 @@ import { BiCoinStack, BiMask } from "react-icons/bi";
 import { MdOutlineCurrencyExchange, MdOutlineWebhook } from "react-icons/md";
 import { motion } from "framer-motion";
 
-import { aboutVid } from "../../assets";
-import { TryVideo } from "../TryVideo/TryVideo";
+// import { aboutVid } from "../../assets";
+// import { TryVideo } from "../TryVideo/TryVideo";
 const MotionVStack = motion(VStack);
 
 export const AboutUs = (props: any) => {

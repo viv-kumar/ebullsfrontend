@@ -1,5 +1,5 @@
-export { default as video } from "../assets/headerVid7.mp4";
-export { default as video2 } from "../assets/headerVid8.mp4";
+// export { default as video } from "../assets/headerVid7.mp4";
+// export { default as video2 } from "../assets/headerVid8.mp4";
 export { default as headerBack } from "../assets/headerBack53.png";
 export {default as headerGrad} from "../assets/headerGrad5.png"
 export { default as headerBlock } from "../assets/headerBlock11.png";
@@ -10,7 +10,7 @@ export { default as test } from "../assets/testImg2.png";
 export { default as aboutBack } from "../assets/aboutBack6.png";
 export { default as aboutTheme } from "../assets/aboutTheme5.png";
 export { default as logo } from "../assets/logo8.png";
-export { default as aboutVid } from "../assets/aboutVid3.mp4";
+// export { default as aboutVid } from "../assets/aboutVid3.mp4";
 export { default as mainBack } from "../assets/mainBack4.png";
 export {default as multichain} from "../assets/multiChain3.png"
 export{default as lowerTransc} from "../assets/lowerTransc2.png"

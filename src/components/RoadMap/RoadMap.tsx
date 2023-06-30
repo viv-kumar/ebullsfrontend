@@ -30,7 +30,7 @@ import {
   roadMapMake,
   roadmap,
 } from "../../assets";
-import { video } from "../../assets";
+// import { video } from "../../assets";
 const MotionBox = motion(Box);
 const MotionText = motion(Text);
 const MotionStack = motion(Stack);

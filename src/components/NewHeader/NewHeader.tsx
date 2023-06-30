@@ -32,7 +32,7 @@ import { NewHeroImage } from "./NewHeroImage";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { useInView } from "framer-motion";
-import { TryVideo } from "../TryVideo/TryVideo";
+// import { TryVideo } from "../TryVideo/TryVideo";
 import {
   headerBack,
   headerImg,
