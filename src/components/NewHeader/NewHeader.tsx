@@ -188,7 +188,7 @@ export const NewHeader = () => {
           backdropBlur="2px"
         />
         <ModalContent px={[5,5,5,0]} bg="none">
-          <Image src={popupImage}></Image>
+          <Image src={popupImage} cursor="pointer"></Image>
         </ModalContent>
       </Modal>
     </>
