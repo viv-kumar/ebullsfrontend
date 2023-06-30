@@ -189,11 +189,13 @@ export const NewHeader = () => {
           backdropBlur="2px"
         />
         <ModalContent px={[5, 5, 5, 0]} bg="none">
-          <Image
+          <MotionImage
             src={popupImage}
             cursor="pointer"
             onClick={() => (window.location.href = "https://www.google.com")}
-          ></Image>
+            animate={{scale:[1,1.3,1]}}
+            transition={{duration:2,ease:"linear"}}
+          ></MotionImage>
         </ModalContent>
       </Modal>
     </>
