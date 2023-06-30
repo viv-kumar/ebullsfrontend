@@ -40,7 +40,7 @@ import {
   headerBlock,
   headerGrad,
   headerBlock2,
-  popupImage
+  popupImage,
 } from "../../assets";
 import { animateScroll as scroll } from "react-scroll";
 import { once } from "events";
@@ -51,11 +51,11 @@ const MotionImage2 = motion(Image);
 const MotionButton = motion(Button);
 export const NewHeader = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-   useEffect(() => {
-       onOpen()
-      //  console.log(isOpen)
-   }, []);
- console.log(isOpen);
+  useEffect(() => {
+    onOpen();
+    //  console.log(isOpen)
+  }, []);
+  console.log(isOpen);
 
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -151,15 +151,16 @@ export const NewHeader = () => {
               <MotionImage
                 src={headerBlock}
                 animate={{ rotateZ: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 boxSize={[250, 300, 325, 350, 485]}
+                // border="1px solid red"
                 // zIndex={2}
                 // ml={[2,2,2,0]}
               ></MotionImage>
               <MotionImage2
                 src={headerBlock2}
                 animate={{ rotateZ: 360 }}
-                transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 boxSize={[150, 200, 225, 250, 300]}
                 position="absolute"
                 // top={16}
@@ -180,15 +181,19 @@ export const NewHeader = () => {
           bgColor={useColorModeValue("#ffffe0", "none")}
         ></Stack>
       </VStack>
-      <Modal isOpen={isOpen} onClose={onClose} isCentered >
+      <Modal isOpen={isOpen} onClose={onClose} isCentered>
         <ModalOverlay
           bg="none"
           backdropFilter="auto"
           backdropInvert="80%"
           backdropBlur="2px"
         />
-        <ModalContent px={[5,5,5,0]} bg="none">
-          <Image src={popupImage} cursor="pointer"></Image>
+        <ModalContent px={[5, 5, 5, 0]} bg="none">
+          <Image
+            src={popupImage}
+            cursor="pointer"
+            onClick={() => (window.location.href = "https://www.google.com")}
+          ></Image>
         </ModalContent>
       </Modal>
     </>
