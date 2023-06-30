@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.17",
     "@chakra-ui/react": "^2.5.3",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
+    "@react-three/fiber": "^8.12.1",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^14.1.0",
@@ -13,17 +15,29 @@
     "@types/node": "^12.0.0",
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
-    "framer-motion": "^6.2.9",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^3.0.0",
-    "react-scripts": "5.0.1",
+    "chart.js": "^4.2.1",
+    "framer-motion": "^10.11.2",
+    "framer-motion-3d": "^10.12.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-slick": "^0.29.0",
+    "react-type-animation": "^3.0.1",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.151.3",
     "typescript": "^4.6.3",
+    "vanilla-tilt": "^1.8.0",
+    "video-player": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,5 +55,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-scroll": "^1.8.6",
+    "@types/react-slick": "^0.23.10"
   }
 }
